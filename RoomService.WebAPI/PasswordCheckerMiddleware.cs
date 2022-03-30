@@ -17,8 +17,7 @@ namespace RoomService.WebAPI
         public async Task InvokeAsync(HttpContext context)
         {
             const string passwordHeader = "passwordKey";
-            const string defaultPassword = "passwordKey123456789000";
-            var expectedPassword = Environment.GetEnvironmentVariable(passwordHeader) ?? defaultPassword;
+            var expectedPassword = Environment.GetEnvironmentVariable(passwordHeader);
             context.Response.StatusCode = (int)HttpStatusCode.Forbidden;
             if (context.Request.Headers.ContainsKey(passwordHeader))
             {
