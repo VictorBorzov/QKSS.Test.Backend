@@ -1,3 +1,5 @@
+[![.NET](https://github.com/VictorBorzov/QKSS.Test.Backend/actions/workflows/dotnet.yml/badge.svg)](https://github.com/VictorBorzov/QKSS.Test.Backend/actions/workflows/dotnet.yml)
+
 ## Environment:  
 - .NET version: 3.0
 
